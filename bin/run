@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+version=`cat version`
+exec docker run -it --rm albuild-snap:$version /bin/bash -l

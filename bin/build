@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+version=`cat version`
+snap_version=`cat snap-version`
+exec docker build . --force-rm --build-arg version=$version --build-arg snap_version=$snap_version -t albuild-snap:$version

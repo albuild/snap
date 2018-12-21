@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+version=`cat version`
+exec docker rmi albuild-snap:$version
