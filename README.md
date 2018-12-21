@@ -6,7 +6,7 @@ A set of prebuilt snapd and snap tools for Amazon Linux 2.
 
 ### Instructions
 
-1. Download the prebuilt packages from [the Release page](https://github.com/albuild/snap/releases/tag/v0.1.0).
+1. Download the snap-confine and snapd packages from [the Release page](https://github.com/albuild/snap/releases/tag/v0.1.0).
 
 1. Install the package.
 
