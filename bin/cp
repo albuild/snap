@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 version=`cat version`
 snap_version=`cat snap-version`
+arch=`uname -m`
 mkdir -p rpm
-exec docker run --rm -v `pwd`/rpm:/rpm albuild-snap:$version /bin/bash -l -c "cp -f /root/rpmbuild/RPMS/x86_64/*-$snap_version-0.amzn2.x86_64.rpm /rpm"
+exec docker run --rm -v `pwd`/rpm:/rpm albuild-snap:$version /bin/bash -l -c "cp -f /root/rpmbuild/RPMS/$arch/*-$snap_version-0.amzn2.$arch.rpm /rpm"
